@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Bücher - Professionelle Buchpräsentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>📚 Meine Bücher</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Bücher</a></li>
+                <li><a href="#about">Über</a></li>
+                <li><a href="admin.html" class="admin-link">Admin</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Entdecken Sie meine Bücher</h1>
+            <p class="hero-subtitle">Professionelle Landingpages für Ihre Buchprojekte</p>
+        </div>
+    </section>
+
+    <!-- Books Carousel Section -->
+    <section id="books" class="books-section">
+        <div class="container">
+            <h2 class="section-title">Meine Publikationen</h2>
+
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Vorheriges Buch">‹</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel" id="booksCarousel">
+                        <!-- Books will be dynamically inserted here -->
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Nächstes Buch">›</button>
+            </div>
+
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- Book Detail Modal -->
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-card glass-card">
+                <h2>Über den Autor</h2>
+                <p>Willkommen auf meiner professionellen Buchpräsentationsseite. Hier finden Sie alle meine Publikationen übersichtlich dargestellt.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Meine Bücher. Alle Rechte vorbehalten.</p>
+            <div class="footer-links">
+                <a href="#impressum">Impressum</a>
+                <a href="#datenschutz">Datenschutz</a>
+                <a href="admin.html">Admin</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
